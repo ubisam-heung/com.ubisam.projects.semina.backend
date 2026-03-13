@@ -11,7 +11,7 @@ com.ubisam.projects.semina.backend/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/ubisam/projects/semina/
+│   │   │   └── com/ubisam/projects/semina/backend/
 │   │   │        ├── Application.java            # Spring Boot 메인 클래스
 │   │   │        ├── ApplicationApiConfig.java   # API 설정 클래스
 │   │   │        ├── ApplicationStompConfig.java # Stomp 설정 클래스
@@ -22,8 +22,15 @@ com.ubisam.projects.semina.backend/
 │   │        └── application.properties          # 환경 및 DB 설정
 │   └── test/
 │        ├── java/
-│        │   └── com/ubisam/projects/semina/
-│        │        └── ApplicationTests.java      # 테스트 코드
+│        │   └── com/ubisam/projects/semina/backend/
+│        │        ├── ApplicationTests.java      # 통합 테스트 코드
+│        │        └── api/
+│        │             ├── helloes/
+│        │             │    ├── HelloDocs.java   # Hello API 문서화/테스트 유틸
+│        │             │    └── HelloTests.java  # Hello API 테스트
+│        │             └── worlds/
+│        │                  ├── WorldDocs.java   # World API 문서화/테스트 유틸
+│        │                  └── WorldTests.java  # World API 테스트
 │        └── resources/
 │             └── application.properties         # 테스트 환경 설정
 └── target/

@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "t_str") //테이블 생성
+@Table(name = "example_world") //테이블 생성
 public class World {
 
     @Id
