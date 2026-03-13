@@ -1,4 +1,4 @@
-package com.ubisam.example2;
+package com.ubisam.projects.semina.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,8 +6,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.ubisam.example2.api.helloes.HelloRepository;
-import com.ubisam.example2.domain.Hello;
+import com.ubisam.projects.semina.backend.api.helloes.HelloRepository;
+import com.ubisam.projects.semina.backend.domain.Hello;
 
 import io.u2ware.common.data.jpa.repository.query.JpaSpecificationBuilder;
 import static io.u2ware.common.docs.MockMvcRestDocs.is2xx;

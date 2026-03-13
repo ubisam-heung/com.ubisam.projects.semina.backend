@@ -1,4 +1,4 @@
-package com.ubisam.example2;
+package com.ubisam.projects.semina.backend;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -6,8 +6,8 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
-import com.ubisam.example2.domain.Hello;
-import com.ubisam.example2.domain.World;
+import com.ubisam.projects.semina.backend.domain.Hello;
+import com.ubisam.projects.semina.backend.domain.World;
 
 import io.u2ware.common.data.jpa.config.EnableRestfulJpaRepositories;
 

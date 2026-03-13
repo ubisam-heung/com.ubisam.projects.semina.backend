@@ -1,4 +1,4 @@
-package com.ubisam.example2.domain;
+package com.ubisam.projects.semina.backend.domain;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;

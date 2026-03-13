@@ -1,8 +1,8 @@
-package com.ubisam.example2.api.worlds;
+package com.ubisam.projects.semina.backend.api.worlds;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.ubisam.example2.domain.World;
+import com.ubisam.projects.semina.backend.domain.World;
 
 public interface  WorldRepository extends JpaRepository<World, Long>{
     // List<World> findByName(String name);

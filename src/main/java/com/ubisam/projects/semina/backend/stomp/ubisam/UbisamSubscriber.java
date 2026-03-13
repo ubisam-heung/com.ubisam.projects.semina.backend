@@ -1,4 +1,4 @@
-package com.ubisam.example2.stomp.ubisam;
+package com.ubisam.projects.semina.backend.stomp.ubisam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -6,9 +6,8 @@ import org.springframework.stereotype.Component;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-
-import com.ubisam.example2.api.helloes.HelloRepository;
-import com.ubisam.example2.domain.Hello;
+import com.ubisam.projects.semina.backend.api.helloes.HelloRepository;
+import com.ubisam.projects.semina.backend.domain.Hello;
 
 import io.u2ware.common.stomp.client.WebsocketStompClient;
 import io.u2ware.common.stomp.client.WebsocketStompClientHandler;

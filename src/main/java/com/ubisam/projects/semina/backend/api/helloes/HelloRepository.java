@@ -1,6 +1,6 @@
-package com.ubisam.example2.api.helloes;
+package com.ubisam.projects.semina.backend.api.helloes;
 
-import com.ubisam.example2.domain.Hello;
+import com.ubisam.projects.semina.backend.domain.Hello;
 
 import io.u2ware.common.data.jpa.repository.RestfulJpaRepository;
 
