@@ -32,10 +32,10 @@ public class UbisamSubscriber implements WebsocketStompClientHandler{
         ObjectNode data = mapper.createObjectNode();
         data.put("message", "hello");
 
-        Hello h = new Hello();
-        h.setEmail(message.has("principal") ? message.get("principal").asText() : null);
-        h.setName(message.has("payload") ? message.get("payload").asText() : null);
-        helloRepository.save(h);
+        // Hello h = new Hello();
+        // h.setEmail(message.has("principal") ? message.get("principal").asText() : null);
+        // h.setName(message.has("payload") ? message.get("payload").asText() : null);
+        // helloRepository.save(h);
 
         client.send("/app/robot", data);
     }
