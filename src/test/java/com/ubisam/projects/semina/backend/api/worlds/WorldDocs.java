@@ -1,9 +1,13 @@
 package com.ubisam.projects.semina.backend.api.worlds;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.IntStream;
 
 import org.springframework.stereotype.Component;
+
+import com.ubisam.projects.semina.backend.domain.World;
 
 import io.u2ware.common.docs.MockMvcRestDocs;
 
@@ -21,5 +25,18 @@ public class WorldDocs extends MockMvcRestDocs{
     entity.put("name", name);
     return entity;
   }
+
+  public List<World> newEntities(int count) {
+    return IntStream.rangeClosed(1, count)
+      .mapToObj(i -> newEntity("길동" + i))
+      .map(entityMap -> {
+        World world = new World();
+        world.setName((String) entityMap.get("name"));
+        world.setEmail((String) entityMap.get("email"));
+        return world;
+      })
+      .toList();
+  }
+
 }
 

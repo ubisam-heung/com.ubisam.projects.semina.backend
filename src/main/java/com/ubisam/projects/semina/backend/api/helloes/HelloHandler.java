@@ -59,9 +59,10 @@ public class HelloHandler {
 
     @HandleBeforeRead
     public void beforeSearch(Hello hello, Specification<Hello> spec){
-        // System.out.println("[beforeSearch] testtesttesttesttesttesttesttest");
         JpaSpecificationBuilder<Hello> query = JpaSpecificationBuilder.of(Hello.class);
+        // select * from example_customer_list where email like '%키워드%' or name = '키워드'
         query.where()
-            .and().eq("id", hello.getHelloId()).build(spec);
+            .and().eq("name", hello.getKeyword())
+            .or().like("email", "%" + hello.getKeyword() + "%").build(spec);
     }
 }
