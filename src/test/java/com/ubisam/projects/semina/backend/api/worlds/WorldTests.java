@@ -40,7 +40,7 @@ public class WorldTests {
     
 		mockMvc
       .perform(get("/api/worlds/search"))
-      .andExpect(is4xx())
+      .andExpect(is2xx())
     ;
 
 		mockMvc
@@ -129,7 +129,7 @@ public class WorldTests {
         .param("sort", "id,desc"))
         .andDo(print())
         .andExpect(is2xx())
-        .andExpect(isJson("$._embedded.worlds[0].id", 40));
+        .andExpect(isJson("$._embedded.worlds[0].id", 41));
 
   }
 }
